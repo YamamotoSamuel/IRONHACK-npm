@@ -1,0 +1,286 @@
+/* roboto-100 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: url('../fonts/roboto-v18-latin-100.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Thin'), local('Roboto-Thin'),
+  url('../fonts/roboto-v18-latin-100.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/roboto-v18-latin-100.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/roboto-v18-latin-100.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/roboto-v18-latin-100.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/roboto-v18-latin-100.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+
+/* roboto-300 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/roboto-v18-latin-300.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Light'), local('Roboto-Light'),
+  url('../fonts/roboto-v18-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/roboto-v18-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/roboto-v18-latin-300.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/roboto-v18-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/roboto-v18-latin-300.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v18-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Roboto'), local('Roboto-Regular'),
+  url('../fonts/roboto-v18-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/roboto-v18-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/roboto-v18-latin-regular.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/roboto-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/roboto-v18-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+
+/* roboto-700 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v18-latin-700.eot'); /* IE9 Compat Modes */
+  src: local('Roboto Bold'), local('Roboto-Bold'),
+  url('../fonts/roboto-v18-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/roboto-v18-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/roboto-v18-latin-700.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/roboto-v18-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/roboto-v18-latin-700.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+
+
+/*GENERAL STYLES*/
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  background-color: rgba(0,0,0,.3);
+}
+
+h1{
+  font-weight: 300;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+h2{
+  font-weight: 300;
+}
+
+a{
+  font-weight: 300;
+  color: rgba(255,255,255,0.9);
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+.button{
+  display: block;
+  padding: 8px 16px;;
+  border-radius: 20px;
+  text-align: center;
+  width: 150px;
+  margin-top: 10px;
+  transform: translateY(30px);
+  opacity: 0;
+  transition: all 1s;
+}
+
+.button.visible{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+section{
+  padding: 70px 0;
+}
+
+
+/*NAVIGATION*/
+nav {
+  background-color: #C12127;
+  color: rgba(255,255,255,0.8);
+  padding: 10px 10px;
+  /*height: 100px;*/
+}
+
+nav ul{
+  float: right;
+  margin: 0 20px 0 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+  /*line-height: 30px;*/
+}
+
+
+/*HERO*/
+#hero{
+  background: rgba(0,0,0,0.4) url('../images/city-scape.svg') no-repeat center / cover;
+  height: 350px;
+}
+
+.wrapper1{
+  position: relative;
+  height: 40px;
+  padding: 20px;
+}
+
+.wrapper1 img:first-of-type{
+  max-width: 10%;
+  max-height: 100%;
+  float: left;
+}
+.wrapper1 img:nth-of-type(2){
+  max-width: 10%;
+  max-height: 100%;
+  float: right;
+}
+
+.wrapper1 span{
+  line-height: 35px;
+  margin-left: 40px;
+}
+
+.wrapper2{
+  width: 35%;
+  margin: 20px 0 0 13%;
+}
+
+.buttonOrange{
+  background-color: #e97e11;
+}
+
+#findBar{
+  color: white;
+  width: 70%;
+  height: 90%;
+  border: 1px solid #4e4e57;
+  float: left;
+  margin-left: 20px;
+  padding-left: 20px;
+  background-color: rgb(31, 82, 111);
+}
+
+
+/*SECTION1  COLLABORATION*/
+
+#section1{
+  background-color: rgb(39, 53, 71);
+}
+.wrapper3{
+  width: 300px;
+  margin-left: 200px;
+  float: left;
+}
+
+.wrapper4{
+  float: left;
+  margin-left: 50px;
+}
+
+.wrapper5{
+  width: 300px;
+}
+
+.clearfix{
+  clear: both;
+}
+
+#section1 li{
+  line-height: 30px;
+}
+
+.wrapper4 li::before{
+  content: '.';
+  margin-right: 0.4em;
+  position: relative;
+  top: -0.15em;
+  font-size: 2em;
+}
+
+.buttonRed{
+  background-color: #ac2e2d;
+}
+
+/*SECTION 2 WHAT IS NPM*/
+
+#section2{
+  position: relative;
+  background: rgba(0,0,0,0.3) url('../images/forklift.svg');
+  background-size: cover;
+  height: 250px;
+  /*margin: 10px;*/
+}
+
+#section2 header {
+	position: absolute;
+	width: 350px;
+	top: 12%;
+	left: 6%;
+}
+
+#section2 h2{
+  margin-bottom: 20px;
+}
+
+.buttonDarkBlue{
+  background-color: rgb(49, 68, 88);
+  width: 100px;
+}
+
+/*SECTION3 */
+
+#section3{
+  background-color: white;
+}
+
+#section3 header{
+  text-align: center;
+  color: rgb(83, 88, 98);
+}
+
+#section3 article p{
+  color: rgb(135, 145, 156);
+}
+
+#section3 a{
+  color: rgb(208, 74, 73);
+}
+
+#section3 h2{
+  margin-bottom: 20px;
+}
+
+#section3 article{
+  float: left;
+  padding: 20px;
+  margin: 5px;
+
+  width: calc(33.3% - 52px);
+  text-align: center;
+}
+#section3 article p{
+  padding: 0 80px;
+}
+
+.clearfix{
+  clear: both;
+}
